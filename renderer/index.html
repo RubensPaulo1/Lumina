@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lúmina - Leitor de Livros com Narração</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar - Biblioteca -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">Lúmina</h1>
+                <button class="btn-primary" id="loadBookBtn">+ Carregar Livro</button>
+            </div>
+            
+            <div class="books-list" id="booksList">
+                <!-- Lista de livros será inserida aqui via JavaScript -->
+            </div>
+        </aside>
+
+        <!-- Área Principal - Leitor -->
+        <main class="main-content" id="mainContent">
+            <div class="reader-header">
+                <h2 id="bookTitle">Selecione um livro</h2>
+                <div class="reader-controls">
+                    <label class="voice-control">
+                        <span>Idioma</span>
+                        <select id="voiceLanguage">
+                            <option value="pt-BR">Português (Brasil)</option>
+                            <option value="pt">Português (Portugal)</option>
+                            <option value="en">English</option>
+                        </select>
+                    </label>
+                    <label class="voice-control">
+                        <span>Voz</span>
+                        <select id="voiceStyle">
+                            <option value="default">Padrão</option>
+                            <option value="alt">Alternativa</option>
+                        </select>
+                    </label>
+                    <label class="voice-control">
+                        <span>Velocidade</span>
+                        <select id="voiceSpeed">
+                            <option value="0.7">0.7×</option>
+                            <option value="0.85" selected>0.85×</option>
+                            <option value="1">1×</option>
+                            <option value="1.15">1.15×</option>
+                            <option value="1.3">1.3×</option>
+                        </select>
+                    </label>
+                    <button class="btn-icon" id="bookmarkBtn" title="Adicionar Marcador">🔖</button>
+                    <label class="font-size-control">
+                        <span>Aa</span>
+                        <input type="range" id="fontSizeSlider" min="12" max="24" value="16" step="1">
+                    </label>
+                    <button class="btn-icon" id="darkModeBtn" title="Modo Escuro">🌙</button>
+                </div>
+            </div>
+
+            <div class="reader-container">
+                <div class="reader-content" id="readerContent">
+                    <div class="empty-state">
+                        <p>📖 Carregue um livro para começar a ler</p>
+                        <p class="empty-state-subtitle">Clique em qualquer parte do texto para iniciar a narração</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles de Áudio -->
+            <div class="audio-controls" id="audioControls" style="display: none;">
+                <button class="btn-audio" id="playPauseBtn">▶️</button>
+                <button class="btn-audio" id="stopBtn">⏹️</button>
+                <div class="audio-progress">
+                    <div class="audio-progress-bar" id="audioProgressBar"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal para Marcador -->
+    <div class="modal" id="bookmarkModal" style="display: none;">
+        <div class="modal-content">
+            <h3>Adicionar Marcador</h3>
+            <textarea id="bookmarkNote" placeholder="Nota (opcional)"></textarea>
+            <div class="modal-actions">
+                <button class="btn-secondary" id="cancelBookmarkBtn">Cancelar</button>
+                <button class="btn-primary" id="saveBookmarkBtn">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

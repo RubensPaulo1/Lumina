@@ -1,0 +1,45 @@
+# Dependências
+node_modules/
+package-lock.json
+
+# Banco de dados
+database/*.db
+database/*.db-journal
+
+# Arquivos temporários
+temp_audio.wav
+temp_tts_input.txt
+*.wav
+
+# Build
+dist/
+build/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Coqui TTS cache
+.coqui/

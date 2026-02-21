@@ -1,0 +1,19 @@
+Capítulo 1: O Início
+
+Era uma vez, em um reino distante, um jovem aprendiz chamado Lucas. Ele tinha um sonho: criar um aplicativo que transformasse textos em áudio, permitindo que as pessoas ouvissem seus livros favoritos enquanto faziam outras atividades.
+
+Lucas passou dias e noites estudando programação. Aprendeu sobre Electron, Node.js, SQLite e Python. Cada linha de código era um passo em direção ao seu objetivo.
+
+Finalmente, após meses de trabalho árduo, ele criou o Lúmina. Um aplicativo simples, mas poderoso, que permitia aos usuários carregar seus livros e ouvi-los com uma voz natural e clara.
+
+O aplicativo se tornou um sucesso. Pessoas de todas as idades começaram a usar o Lúmina para ouvir seus livros favoritos durante caminhadas, exercícios ou simplesmente para relaxar.
+
+E assim, Lucas realizou seu sonho, criando algo que ajudava outras pessoas a descobrirem o prazer da leitura de uma nova forma.
+
+Capítulo 2: Novas Funcionalidades
+
+Com o sucesso do Lúmina, Lucas decidiu adicionar novas funcionalidades. Ele implementou marcadores, permitindo que os usuários salvassem pontos importantes do texto.
+
+Também adicionou a capacidade de ajustar a velocidade da narração e escolher entre diferentes vozes. Cada atualização tornava o aplicativo ainda mais útil e agradável de usar.
+
+Os usuários ficaram encantados com as melhorias. O Lúmina se tornou não apenas uma ferramenta de leitura, mas uma companhia constante para aqueles que amavam livros.
