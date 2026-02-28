@@ -1,4 +1,10 @@
 # Lúmina - Leitor de Livros com Narração Offline
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+![Last Commit](https://img.shields.io/github/last-commit/RubensPaulo1/Lumina)
+![Repo Size](https://img.shields.io/github/repo-size/RubensPaulo1/Lumina)
+![Issues](https://img.shields.io/github/issues/RubensPaulo1/Lumina)
+![Stars](https://img.shields.io/github/stars/RubensPaulo1/Lumina)
 
 Aplicativo desktop para leitura de livros com narração em tempo real usando Electron, SQLite e **Piper TTS** (voz em Português do Brasil).
 
